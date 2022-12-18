@@ -39,11 +39,11 @@
 
         default_layer {
             bindings = <
- &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4         &kp N5                      &tog 1             &mo 3     &kp N6     &kp N7     &kp N8     &kp N9                &kp N0  &kp MINUS
-   &kp TAB      &kp Q     &kp W     &kp E      &kp R          &kp T                       &mo 4             &mo 7      &kp Y      &kp U      &kp I      &kp O                 &kp P   &kp BSLH
-   &kp ESC      &kp A     &kp S     &kp D      &kp F          &kp G                       &mo 5  &macro_cmd_space   &kp LALT                         &kp LGUI  &macro_cmd_alt_space     &tog 8     &kp H   &kp J      &kp K    &kp L  &kp SEMI    &kp SQT
- &kp LSHFT      &kp Z     &kp X     &kp C      &kp V          &kp B                       &none             &none   &kp HOME      &none      &none  &kp PG_UP                 &none      &none     &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT  &kp BACKSPACE            &kp LEFT_CONTROL           &kp END  &kp PG_DN  &kp ENTER  &kp SPACE     &kp UP              &kp DOWN   &kp LBKT  &kp RBKT   &mo 2
+ &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4         &kp N5                      &tog 1                   &mo 3              &kp N6     &kp N7     &kp N8     &kp N9                   &kp N0  &kp MINUS
+   &kp TAB      &kp Q     &kp W     &kp E      &kp R          &kp T                       &mo 4                   &mo 7               &kp Y      &kp U      &kp I      &kp O                    &kp P   &kp BSLH
+   &kp ESC      &kp A     &kp S   &lt 5 D    &lt 4 F          &kp G                       &mo 5  &mt LEFT_CONTROL GRAVE            &kp LCMD                         &kp LALT  &mt RIGHT_CONTROL TILDE     &tog 8     &kp H   &kp J      &kp K    &kp L  &kp SEMI    &kp SQT
+ &kp LSHFT      &kp Z     &kp X     &kp C      &kp V          &kp B                       &none                   &none            &kp HOME      &none      &none  &kp PG_UP                    &none      &none     &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT  &kp BACKSPACE            &kp LEFT_CONTROL            &mt LCMD END  &mt LEFT_ALT PG_DN  &kp ENTER  &kp SPACE     &kp UP                 &kp DOWN   &kp LBKT  &kp RBKT   &mo 2
             >;
         };
 
@@ -119,11 +119,11 @@
 
         layer_Layer__8 {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &macro_cmd_space  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
