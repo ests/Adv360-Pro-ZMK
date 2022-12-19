@@ -1,14 +1,8 @@
-macro_c_u: macro_c_u{
+macro_cmd_tab: macro_cmd_tab{
 compatible = "zmk,behavior-macro";
-label = "macro_c_u";
+label = "macro_cmd_tab";
 #binding-cells = <0>;
-bindings = <&sk LEFT_CONTROL>, <&kp U>;
-};
-macro_c_d: macro_c_d{
-compatible = "zmk,behavior-macro";
-label = "macro_c_d";
-#binding-cells = <0>;
-bindings = <&sk LEFT_CONTROL>, <&kp D>;
+bindings = <&sk LEFT_COMMAND>, <&kp TAB>;
 };
 macro_cmd_space: macro_cmd_space{
 compatible = "zmk,behavior-macro";
