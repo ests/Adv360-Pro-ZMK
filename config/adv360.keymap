@@ -18,9 +18,23 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+#define MARIO 4
+#define LUIGI 5
+
 / {
   behaviors {
     #include "macros.dtsi"
+    
+    gqt: global-quick-tap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "GLOBAL_QUICK_TAP";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <200>;
+        quick-tap-ms = <125>;
+        global-quick-tap;
+        bindings = <&kp>, <&kp>;
+    };
 
     hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
@@ -41,9 +55,9 @@
             bindings = <
  &kp EQUAL     &kp N1      &kp N2    &kp N3     &kp N4  &kp N5               &tog 1                                                                                           &mo 3  &kp N6  &kp N7     &kp N8   &kp N9    &kp N0  &kp MINUS
    &kp TAB      &kp Q       &kp W     &kp E      &kp R   &kp T                &none                                                                                           &none   &kp Y   &kp U      &kp I    &kp O     &kp P   &kp BSLH
-    &gresc      &kp A       &kp S     &kp D      &kp F   &kp G            &kp GRAVE             &kp LEFT_ALT  &kp LEFT_COMMAND   &none   &none   &kp LGUI  &kp RIGHT_ALT      &none   &kp H   &kp J      &kp K    &kp L  &kp SEMI    &kp SQT
- &kp LSHFT      &kp Z       &kp X     &kp C      &kp V   &kp B                &none                    &none          &kp HOME   &none   &none  &kp PG_UP          &none      &none   &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-     &mo 2  &kp TILDE  &caps_word  &kp LEFT  &kp RIGHT                     &kp BSPC  &mt LEFT_CONTROL DELETE           &kp END                  &kp PG_DN      &kp ENTER  &kp SPACE           &none      &none    &none     &none      &mo 2
+    &gresc      &kp A       &kp S     &kp D      &kp F   &kp G                &none       &kp LEFT_ALT  &kp LEFT_COMMAND   &none   &none   &kp LGUI  &kp RIGHT_ALT      &none   &kp H   &kp J      &kp K    &kp L  &kp SEMI    &kp SQT
+ &kp LSHFT      &kp Z       &kp X     &kp C      &kp V   &kp B                &none              &none          &kp HOME   &none   &none  &kp PG_UP          &none      &none   &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+     &mo 2  &kp TILDE  &caps_word  &kp LEFT  &kp RIGHT               &lt BSPC LUIGI          &mo MARIO           &kp END                  &kp PG_DN      &kp ENTER  &kp SPACE           &none      &none    &none     &none      &mo 2
             >;
         };
 
@@ -80,7 +94,7 @@
         layer_Layer__4 {
             bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &kp M   &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
@@ -90,7 +104,7 @@
         layer_Layer__5 {
             bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &kp L   &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
