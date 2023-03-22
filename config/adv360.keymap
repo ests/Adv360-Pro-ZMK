@@ -67,15 +67,15 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LBKT &kp 0 &kp RBKT>
+                = <&macro_tap &kp LBKT &kp 0 &kp RBKT>
                 ;
         };
         a1: a1 {
-            label = "ZM_a0";
+            label = "ZM_a1;
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LBKT &kp 1 &kp RBKT>
+                = <&macro_tap &kp LBKT &kp 1 &kp RBKT>
                 ;
         };
         a2: a2 {
@@ -83,7 +83,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LBKT &kp 2 &kp RBKT>
+                = <&macro_tap &kp LBKT &kp 2 &kp RBKT>
                 ;
         };
 
