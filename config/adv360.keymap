@@ -71,7 +71,7 @@
                 ;
         };
         ba1: ba1 {
-            label = "ZM_ba1;
+            label = "ZM_ba1";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -182,7 +182,7 @@
             bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &ba0  &ba1  &ba2  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &ba0    &ba1    &ba2  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
