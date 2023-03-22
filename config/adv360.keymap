@@ -67,7 +67,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&kp LBKT &kp 0 &kp RBKT>
+                = <&kp LBKT &kp N0 &kp RBKT>
                 ;
         };
         ba1: ba1 {
@@ -75,7 +75,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&kp LBKT &kp 1 &kp RBKT>
+                = <&kp LBKT &kp N1 &kp RBKT>
                 ;
         };
         ba2: ba2 {
@@ -83,7 +83,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&kp LBKT &kp 2 &kp RBKT>
+                = <&kp LBKT &kp N2 &kp RBKT>
                 ;
         };
 
