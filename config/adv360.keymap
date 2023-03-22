@@ -62,28 +62,28 @@
     };
 
     macros {
-        a0: a0 {
-            label = "ZM_a0";
+        ba0: ba0 {
+            label = "ZM_ba0";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LBKT &kp 0 &kp RBKT>
+                = <&kp LBKT &kp 0 &kp RBKT>
                 ;
         };
-        a1: a1 {
-            label = "ZM_a1;
+        ba1: ba1 {
+            label = "ZM_ba1;
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LBKT &kp 1 &kp RBKT>
+                = <&kp LBKT &kp 1 &kp RBKT>
                 ;
         };
-        a2: a2 {
-            label = "ZM_a2";
+        ba2: ba2 {
+            label = "ZM_ba2";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LBKT &kp 2 &kp RBKT>
+                = <&kp LBKT &kp 2 &kp RBKT>
                 ;
         };
 
@@ -182,7 +182,7 @@
             bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &a0  &a1  &a2  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &ba0  &ba1  &ba2  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
