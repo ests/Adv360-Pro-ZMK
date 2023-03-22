@@ -81,13 +81,13 @@
       compatible = "zmk,combos";
       combo_enter {
         timeout-ms = <40>;
-        key-positions = <32 33>;
+        key-positions = <31 32>;
         bindings = <&kp ENTER>;
       };
 
       combo_tab {
         timeout-ms = <40>;
-        key-positions = <30 31>;
+        key-positions = <29 30>;
         bindings = <&kp TAB>;
       };
     };
