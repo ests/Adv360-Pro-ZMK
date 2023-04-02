@@ -181,8 +181,8 @@
         layer_Layer__5 {
             bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &kp RBKT
- &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &ba0    &ba1    &ba2  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans   &trans                                                  &trans  &trans    &ba0    &ba1    &ba2  &trans  &kp RBKT
+ &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC  &trans
  &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
