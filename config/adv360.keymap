@@ -87,7 +87,7 @@
         };
 
         cmd_c: cmd_c {
-            label = "ZM_cmd_space";
+            label = "ZM_cmd_c";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -98,7 +98,7 @@
         };
 
         cmd_v: cmd_v {
-            label = "ZM_cmd_space";
+            label = "ZM_cmd_v";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
