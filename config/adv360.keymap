@@ -1,15 +1,5 @@
-
 /*
- * Copyright (c) 2020 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
-
-
-/* THIS FILE WAS GENERATED!
- *
- * This file was generated automatically. You may or may not want to
- * edit it directly.
+ * ests Kinesis 260 pro personal config
  */
 
 #include <behaviors.dtsi>
@@ -53,9 +43,10 @@
           compatible = "zmk,behavior-hold-tap";
           label = "HOMEROW_MODS";
           #binding-cells = <2>;
-          tapping-term-ms = <200>;
-          quick-tap-ms = <190>;
-          flavor = "balanced";
+          tapping-term-ms = <210>;
+          quick-tap-ms = <125>;
+          flavor = "tap-preferred";
+          global-quick-tap;
           bindings = <&kp>, <&kp>;
       };
     };
