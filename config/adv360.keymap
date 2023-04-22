@@ -185,7 +185,7 @@
             bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans   &trans                                                  &trans  &trans  &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC  &kp PIPE
- &trans  &kp MINUS  &kp PLUS  &kp EQUAL  &kp UNDER  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp UNDER   &kp EQUAL  &kp PLUS  &kp MINUS  &DQT
+ &trans  &kp MINUS  &kp PLUS  &kp EQUAL  &kp UNDER  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp UNDER   &kp EQUAL  &kp PLUS  &kp MINUS  &kp DQT
  &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &ba0  &ba1  &ba2  &trans  &trans
  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
