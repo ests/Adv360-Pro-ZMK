@@ -120,6 +120,78 @@
                 , <&macro_release &kp LCTRL>
                 ;
         };
+
+        tmux_n: tmux_n {
+            label = "ZM_tmux_n";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp A>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp N>
+                ;
+        };
+
+        tmux_p: tmux_p {
+            label = "ZM_tmux_p";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp A>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp P>
+                ;
+        };
+ 
+        // tmux_l: tmux_l {
+        //     label = "ZM_tmux_l";
+        //     compatible = "zmk,behavior-macro";
+        //     #binding-cells = <0>;
+        //     bindings
+        //         = <&macro_press &kp LCTRL>
+        //         , <&macro_tap &kp A>
+        //         , <&macro_release &kp LCTRL>
+        //         , <&macro_tap &kp L>
+        //         ;
+        // };
+ 
+        tmux_c: tmux_c {
+            label = "ZM_tmux_l";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp A>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp C>
+                ;
+        };
+
+        tmux_w: tmux_w {
+            label = "ZM_tmux_w";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp A>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp W>
+                ;
+        };
+
+        tmux_r: tmux_r {
+            label = "ZM_tmux_r";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp A>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp ,>
+                ;
+        };
     };
 
     combos {
@@ -143,11 +215,11 @@
 
         default_layer {
             bindings = <
- &kp EQUAL      &kp N1      &kp N2       &kp N3        &kp N4  &kp N5        &tog 1                                                                          &mo 3   &kp N6        &kp N7       &kp N8        &kp N9         &kp N0  &kp MINUS
-   &kp TAB       &kp Q       &kp W        &kp E         &kp R   &kp T       &kp F10                                                                         &kp F9   &kp Y         &kp U        &kp I         &kp O          &kp P   &kp BSLH
-    &gresc  &hm LALT A  &hm LCMD S  &hm LCTRL D   &hm LSHFT F   &kp G        &kp F7         &tmux     &kp LCMD   &none   &none   &kp LCMD         &tmux     &kp F8   &kp H   &hm RSHFT J  &hm RCTRL K    &hm RCMD L  &hm LALT SEMI    &kp SQT
-      &td0       &kp Z       &kp X        &kp C         &kp V   &kp B         &none         &none     &kp HOME   &none   &none  &kp PG_UP         &none      &none   &kp N         &kp M    &kp COMMA       &kp DOT       &kp FSLH       &td0
-     &mo 2   &kp GRAVE  &caps_word     &kp LEFT     &kp RIGHT              &kp BSPC     &lt 4 TAB      &kp END                  &kp PG_DN     &kp ENTER  &kp SPACE              &kp DOWN       &kp UP      &kp LBKT       &kp RBKT      &mo 2
+ &kp EQUAL      &kp N1      &kp N2       &kp N3        &kp N4  &kp N5     &tog 1                                                                     &mo 3   &kp N6        &kp N7       &kp N8        &kp N9         &kp N0  &kp MINUS
+   &kp TAB       &kp Q       &kp W        &kp E         &kp R   &kp T    &kp F10                                                                    &kp F9   &kp Y         &kp U        &kp I         &kp O          &kp P   &kp BSLH
+    &gresc  &hm LALT A  &hm LCMD S  &hm LCTRL D   &hm LSHFT F   &kp G     &kp F7    &cmd_space   &kp LCMD   &none   &none   &kp LCMD      &tmux     &kp F8   &kp H   &hm RSHFT J  &hm RCTRL K    &hm RCMD L  &hm LALT SEMI    &kp SQT
+      &td0       &kp Z       &kp X        &kp C         &kp V   &kp B      &none         &none   &kp HOME   &none   &none  &kp PG_UP      &none      &none   &kp N         &kp M    &kp COMMA       &kp DOT       &kp FSLH       &td0
+     &mo 2   &kp GRAVE  &caps_word     &kp LEFT     &kp RIGHT           &kp BSPC     &lt 4 TAB    &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE              &kp DOWN       &kp UP      &kp LBKT       &kp RBKT      &mo 2
             >;
         };
 
@@ -184,9 +256,9 @@
         layer_Layer__4 {
             bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans   &trans                                                  &trans  &trans  &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC  &kp PIPE
+ &trans  &trans  &tmux_w  &trans  &trans  &trans   &trans                                                  &trans  &trans             &kp LBKT    &kp RBKT  &trans  &tmux_p  &kp PIPE
  &trans  &kp MINUS  &kp PLUS  &kp EQUAL  &kp UNDER  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp UNDER   &kp EQUAL  &kp PLUS  &kp MINUS  &kp DQT
- &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &ba0  &ba1  &ba2  &trans  &trans
+ &trans  &trans  &trans  &tmux_c  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tmux_n  &ba0  &tmux_r  &ba2  &trans  &trans
  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
