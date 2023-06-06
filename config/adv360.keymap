@@ -158,7 +158,7 @@
         // };
  
         tmux_c: tmux_c {
-            label = "ZM_tmux_l";
+            label = "ZM_tmux_c";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
