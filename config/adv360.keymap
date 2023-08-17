@@ -12,34 +12,6 @@
     behaviors {
       #include "macros.dtsi"
       
-      // ltt: layer_tap_tap {
-      //     compatible = "zmk,behavior-hold-tap";
-      //     label = "LAYER_TAP_TAP";
-      //     #binding-cells = <2>;
-      //     flavor = "hold-preferred";
-      //     tapping-term-ms = <250>;
-      //     quick-tap-ms = <200>;
-      //     global-quick-tap;
-      //     bindings = <&mo>, <&kp>;
-      // };
-
-      // press once for shift, twice for caps_word
-      // td0: tap_dance_0 {
-      //     compatible = "zmk,behavior-tap-dance";
-      //     label = "TAP_DANCE_0";
-      //     #binding-cells = <0>;
-      //     tapping-term-ms = <210>;
-      //     bindings = <&kp LSHFT>, <&caps_word>;
-      // };
-
-      // td1: tap_dance_1 {
-      //     compatible = "zmk,behavior-tap-dance";
-      //     label = "TAP_DANCE_1";
-      //     #binding-cells = <0>;
-      //     tapping-term-ms = <210>;
-      //     bindings = <&mo 4>, <&mo 5>;
-      // };
-
       hm: homerow_mods {
           compatible = "zmk,behavior-hold-tap";
           label = "HOMEROW_MODS";
@@ -53,31 +25,6 @@
     };
 
     macros {
-        // ba0: ba0 {
-        //     label = "ZM_ba0";
-        //     compatible = "zmk,behavior-macro";
-        //     #binding-cells = <0>;
-        //     bindings
-        //         = <&kp LBKT &kp N0 &kp RBKT>
-        //         ;
-        // };
-        // ba1: ba1 {
-        //     label = "ZM_ba1";
-        //     compatible = "zmk,behavior-macro";
-        //     #binding-cells = <0>;
-        //     bindings
-        //         = <&kp LBKT &kp N1 &kp RBKT>
-        //         ;
-        // };
-        // ba2: ba2 {
-        //     label = "ZM_ba2";
-        //     compatible = "zmk,behavior-macro";
-        //     #binding-cells = <0>;
-        //     bindings
-        //         = <&kp LBKT &kp N2 &kp RBKT>
-        //         ;
-        // };
-
         cmd_space: cmd_space {
             label = "ZM_cmd_space";
             compatible = "zmk,behavior-macro";
@@ -187,7 +134,7 @@
         layer_Layer__4 {
             bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans   &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &kp LBCR  &kp RBRC  &kp LBKT  &kp RBKT   &trans                                      &trans  &trans       &kp LBKT    &kp RBKT  &kp LBRC  &kp RBRC  &kp PIPE
+ &trans  &trans  &kp LBRC  &kp RBRC  &kp LBKT  &kp RBKT   &trans                                      &trans  &trans       &kp LBKT    &kp RBKT  &kp LBRC  &kp RBRC  &kp PIPE
  &trans  &kp MINUS  &kp PLUS  &kp EQUAL  &kp UNDER  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp UNDER   &kp EQUAL  &kp PLUS  &kp MINUS  &kp DQT
  &trans  &trans  &trans  &tmux_p  &tmux_n  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LT  &kp GT  &trans  &trans
  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
