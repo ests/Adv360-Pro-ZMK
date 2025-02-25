@@ -94,11 +94,11 @@
     nav {
       display-name = "Nav";
       bindings = <
-        &trans   &trans &trans &trans &trans &trans  &none                                           &none &trans &trans &trans &trans  &trans  &trans
-        &kp F12  &kp F7 &kp F8 &kp F9 &trans &trans  &none                                           &none &trans &trans &trans &trans  &trans  &trans
-        &kp F11  &kp F4 &kp F5 &kp F6 &trans &trans  &none        &trans &trans &trans &trans        &none &trans &trans &trans &trans  &trans  &trans
-        &kp F10  &kp F1 &kp F2 &kp F3 &trans &trans                      &trans &trans                     &trans &trans &trans &trans  &trans  &trans
-        &trans   &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
+        &trans   &trans &trans &trans &trans &trans  &none                                                      &none     &trans    &trans    &trans    &trans    &trans    &trans
+        &trans   &trans &trans &trans &trans &trans  &none                                                      &none     &kp PG_UP &kp BSPC  &kp UP    &kp DEL   &trans    &trans
+        &trans   &trans &trans &trans &trans &trans  &none        &trans &trans     &trans   &trans             &none     &kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT &kp RET   &trans
+        &trans   &trans &trans &trans &trans &trans                      &trans     &trans                                &kp INS   &kp TAB   &trans    &trans    &trans    &trans
+        &trans   &trans &trans &trans &trans               &trans &trans &trans     &trans   &trans   &trans                        &trans    &trans    &trans    &trans    &trans
       >;
     };
 
@@ -112,6 +112,8 @@
         &trans   &trans &trans &trans &trans                &trans &trans &trans &trans &trans &trans               &trans &trans &trans  &trans  &trans
       >;
     };
+
+    // TODO: symbol layer or combos?
 
     // TODO: mouse layer
 
