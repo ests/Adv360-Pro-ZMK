@@ -10,6 +10,21 @@
 #define SYS 2
 #define NAV 3
 #define NUM 4
+#define SM 5
+
+// TODO: define combos for:
+// LPAR (
+// RPAR )
+// UDER _
+// TAB
+// ESC
+// PIPE | and BSHL \ or just BSHL
+// EQUAL = and PLUS + or just EQUAL
+// GRAVE `
+
+// TODO: macros for COPY, PASTE, CUT 
+
+// TODO: Timeles homerow mods for every layer
 
 / {
     behaviors {
@@ -65,7 +80,7 @@
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                                            &none   &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
         &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none                   &kp LCTRL   &kp LALT   &kp LGUI    &kp RCTRL             &none   &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
         &ms0      &kp Z     &kp X    &kp C    &kp V      &kp B                                      &kp HOME   &kp PG_UP                                 &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &ms0
-        &mo FN    &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                  &lt NAV SPACE  &lt FN RET  &kp END    &kp PG_DN   &mo NUM     &ms0                     &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo FN
+        &mo FN    &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                  &lt NAV SPACE  &lt SM RET  &kp END    &kp PG_DN   &mo NUM     &ms0                     &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo FN
       >;
     };
 
@@ -105,15 +120,24 @@
     num {
       display-name = "Num";
       bindings = <
-        &trans   &trans &trans &trans &trans &trans  &none                                             &none &trans &trans &trans &trans  &trans  &trans
-        &trans   &kp N7 &kp N8 &kp N9 &trans &trans  &none                                             &none &trans &trans &trans &trans  &trans  &trans
-        &kp N0   &kp N4 &kp N5 &kp N6 &trans &trans  &none         &trans &trans &trans &trans         &none &trans &trans &trans &trans  &trans  &trans
-        &trans   &kp N1 &kp N2 &kp N3 &trans &trans                       &trans &trans                      &trans &trans &trans &trans  &trans  &trans
-        &trans   &trans &trans &trans &trans                &trans &trans &trans &trans &trans &trans               &trans &trans &trans  &trans  &trans
+        &trans   &trans &trans &trans &trans &trans  &none                                                                       &none &trans &trans &trans &trans  &trans  &trans
+        &trans   &kp N7 &kp N8 &kp N9 &trans &trans  &none                                                                       &none &trans &trans &trans &trans  &trans  &trans
+        &kp N0   &kp N4 &kp N5 &kp N6 &trans &trans  &none         &trans &trans &trans &trans                                   &none &trans &trans &trans &trans  &trans  &trans
+        &trans   &kp N1 &kp N2 &kp N3 &trans &trans                       &trans &trans                                                &trans &trans &trans &trans  &trans  &trans
+        &trans   &trans &trans &trans &trans                &lt NAV SPACE  &lt SM RET  &kp END    &kp PG_DN   &mo NUM     &ms0                &trans &trans &trans  &trans  &trans
       >;
     };
 
-    // TODO: symbol layer or combos?
+    sym {
+      display-name = "Sym";
+      bindings = <
+        &trans   &trans   &trans    &trans    &trans &trans  &none                                                                   &none  &trans    &trans     &trans     &trans    &trans     &trans
+        &trans   &kp AMPS &kp STAR  &kp LPAR  &trans &trans  &none                                                                   &none  &trans    &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC   &trans
+        &kp RPAR &kp DLLR &kp PRCNT &kp CARET &trans &trans  &none                       &trans &trans   &trans     &trans           &none  &kp TILDE &kp UNDER  &kp EQUAL  &kp PLUS  &kp MINUS  &trans
+        &trans   &kp EXCL &kp AT    &kp HASH  &trans &trans                                     &trans   &trans                             &trans    &kp DQT    &kp SQT    &kp GRAVE &kp PIPE   &trans
+        &trans   &trans   &trans    &trans    &trans                &lt NAV SPACE  &lt SM RET  &kp END   &kp PG_DN  &mo NUM   &ms0                    &trans     &trans     &trans    &trans     &trans
+      >;
+    };
 
     // TODO: mouse layer
 
