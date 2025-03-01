@@ -32,89 +32,219 @@
                      53       \
                      68 69 70 \
 
-// TODO: define combos for:
-// LPAR (
-// RPAR )
-// UDER _
-// TAB
-// ESC
-// PIPE | and BSHL \ or just BSHL
-// EQUAL = and PLUS + or just EQUAL
-// GRAVE `
-
-// TODO: macros for COPY, PASTE, CUT 
-
-// WARN: window switching
-
 / {
-    behaviors {
-      #include "macros.dtsi"
-      #include "version.dtsi"
 
-      hml: homerow_mods_l {
-          compatible = "zmk,behavior-hold-tap";
-          label = "HOMEROW_MODS";
-          #binding-cells = <2>;
-          tapping-term-ms = <1200>;
-          quick_tap_ms = <175>;
-          require-prior-idle-ms = <150>;
-          flavor = "balanced";
-          bindings = <&kp>, <&kp>;
-          hold-trigger-on-release;
-          hold-trigger-key-positions = <KEYS_L THUMBS_LEFT>;
-      };
+  combos {
+    compatible = "zmk,combos";
 
-      hmr: homerow_mods_r {
-          compatible = "zmk,behavior-hold-tap";
-          label = "HOMEROW_MODS";
-          #binding-cells = <2>;
-          tapping-term-ms = <1200>;
-          quick_tap_ms = <175>;
-          require-prior-idle-ms = <150>;
-          flavor = "balanced";
-          bindings = <&kp>, <&kp>;
-          hold-trigger-on-release;
-          hold-trigger-key-positions = <KEYS_R THUMBS_RIGHT>;
-      };
-
-      ms0: magic_shift_0 {
-          compatible = "zmk,behavior-tap-dance";
-          #binding-cells = <0>;
-          tapping-term-ms = <200>;
-          bindings = <&kp LSHIFT>, <&caps_word>;
-      };
-
-      macros {
-          cmd_space: cmd_space {
-              label = "ZM_cmd_space";
-              compatible = "zmk,behavior-macro";
-              #binding-cells = <0>;
-              bindings
-                  = <&macro_press &kp LCMD>
-                  , <&macro_tap &kp SPACE>
-                  , <&macro_release &kp LCMD>
-                  ;
-          };
-          os_prev: os_prev {
-              compatible = "zmk,behavior-macro";
-              #binding-cells = <0>;
-              bindings
-                  = <&macro_press &kp LCTRL>
-                  , <&macro_tap &kp LBKT>
-                  , <&macro_release &kp LCTRL>
-                  ;
-          };
-          os_next: os_next {
-              compatible = "zmk,behavior-macro";
-              #binding-cells = <0>;
-              bindings
-                  = <&macro_press &kp LCTRL>
-                  , <&macro_tap &kp RBKT>
-                  , <&macro_release &kp LCTRL>
-                  ;
-          };
-      };
+    copy {
+      key-positions = <48 49>;
+        bindings
+        = <&macro_press &kp LCMD>
+        , <&macro_tap &kp C>
+        , <&macro_release &kp LCMD>
+      ;
     };
+
+    paste {
+      key-positions = <49 50>;
+        bindings
+        = <&macro_press &kp LCMD>
+        , <&macro_tap &kp V>
+        , <&macro_release &kp LCMD>
+      ;
+    };
+
+    enter {
+      key-positions = <29 32>;
+      bindings = <&kp RET>;
+    };
+
+    tab {
+      key-positions = <30 31>;
+      bindings = <&kp TAB>;
+    };
+
+    esc {
+      key-positions = <17 32>;
+      bindings = <&kp ESC>;
+    };
+
+    bspc {
+      key-positions = <47 48>;
+      bindings = <&kp BSPC>;
+    };
+
+    under {
+      key-positions = <31 32>;
+      bindings = <&kp UNDER>;
+    };
+
+    grave {
+      key-positions = <17 18>;
+      bindings = <&kp GRAVE>;
+    };
+
+    tilde {
+      key-positions = <16 17>;
+      bindings = <&kp TILDE>;
+    };
+
+    lpar {
+      key-positions = <41 42>;
+      bindings = <&kp LPAR>;
+    };
+
+    lbkt {
+      key-positions = <42 43>;
+      bindings = <&kp LBKT>;
+    };
+
+    lbrc {
+      key-positions = <43 44>;
+      bindings = <&kp LBRC>;
+    };
+
+    sqt {
+      key-positions = <42 44>;
+      bindings = <&kp SQT>;
+    };
+
+    dqt {
+      key-positions = <41 43>;
+      bindings = <&kp DQT>;
+    };
+
+    pipe {
+      key-positions = <41 44>;
+      bindings = <&kp PIPE>;
+    };
+
+    rpar {
+      key-positions = <23 24>;
+      bindings = <&kp RPAR>;
+    };
+
+    rbkt {
+      key-positions = <24 25>;
+      bindings = <&kp RBKT>;
+    };
+
+    rbrc {
+      key-positions = <25 26>;
+      bindings = <&kp RBRC>;
+    };
+
+    backslash {
+      key-positions = <23 26>;
+      bindings = <&kp BSLH>;
+    };
+
+    equal {
+      key-positions = <55 56>;
+      bindings = <&kp EQUAL>;
+    };
+
+    plus {
+      key-positions = <56 57>;
+      bindings = <&kp PLUS>;
+    };
+
+    minus {
+      key-positions = <57 58>;
+      bindings = <&kp MINUS>;
+    };
+
+    star {
+      key-positions = <56 58>;
+      bindings = <&kp STAR>;
+    };
+
+    amp {
+      key-positions = <55 57>;
+      bindings = <&kp AMPS>;
+    };
+
+    at {
+      key-positions = <41 24>;
+      bindings = <&kp AT>;
+    };
+
+    excl {
+      key-positions = <55 58>;
+      bindings = <&kp EXCL>;
+    };
+
+  };
+  
+  behaviors {
+    #include "macros.dtsi"
+    #include "version.dtsi"
+
+    hml: homerow_mods_l {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <1200>;
+        quick_tap_ms = <175>;
+        require-prior-idle-ms = <150>;
+        flavor = "balanced";
+        bindings = <&kp>, <&kp>;
+        hold-trigger-on-release;
+        hold-trigger-key-positions = <KEYS_L THUMBS_LEFT>;
+    };
+
+    hmr: homerow_mods_r {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <1200>;
+        quick_tap_ms = <175>;
+        require-prior-idle-ms = <150>;
+        flavor = "balanced";
+        bindings = <&kp>, <&kp>;
+        hold-trigger-on-release;
+        hold-trigger-key-positions = <KEYS_R THUMBS_RIGHT>;
+    };
+
+    ms0: magic_shift_0 {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&kp LSHIFT>, <&caps_word>;
+    };
+
+    macros {
+        cmd_space: cmd_space {
+            label = "ZM_cmd_space";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCMD>
+                , <&macro_tap &kp SPACE>
+                , <&macro_release &kp LCMD>
+                ;
+        };
+        os_prev: os_prev {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp LBKT>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+        os_next: os_next {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp RBKT>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+    };
+  };
 
   keymap {
     compatible = "zmk,keymap";
