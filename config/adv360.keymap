@@ -65,6 +65,11 @@
       bindings = <&kp TAB>;
     };
 
+    bspc0 {
+      key-positions = <29 30>;
+      bindings = <&kp BSPC>;
+    };
+
     esc {
       key-positions = <17 32>;
       bindings = <&kp ESC>;
@@ -176,7 +181,7 @@
     };
 
   };
-  
+
   behaviors {
     #include "macros.dtsi"
     #include "version.dtsi"
