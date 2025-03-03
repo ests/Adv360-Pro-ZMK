@@ -34,153 +34,148 @@
 
 / {
 
-  combos {
-    compatible = "zmk,combos";
-
-    copy {
-      key-positions = <48 49>;
-        bindings
-        = <&macro_press &kp LCMD>
-        , <&macro_tap &kp C>
-        , <&macro_release &kp LCMD>
-      ;
-    };
-
-    paste {
-      key-positions = <49 50>;
-        bindings
-        = <&macro_press &kp LCMD>
-        , <&macro_tap &kp V>
-        , <&macro_release &kp LCMD>
-      ;
-    };
-
-    enter {
-      key-positions = <29 32>;
-      bindings = <&kp RET>;
-    };
-
-    tab {
-      key-positions = <30 31>;
-      bindings = <&kp TAB>;
-    };
-
-    bspc0 {
-      key-positions = <29 30>;
-      bindings = <&kp BSPC>;
-    };
-
-    esc {
-      key-positions = <17 32>;
-      bindings = <&kp ESC>;
-    };
-
-    bspc {
-      key-positions = <47 48>;
-      bindings = <&kp BSPC>;
-    };
-
-    under {
-      key-positions = <31 32>;
-      bindings = <&kp UNDER>;
-    };
-
-    grave {
-      key-positions = <17 18>;
-      bindings = <&kp GRAVE>;
-    };
-
-    tilde {
-      key-positions = <16 17>;
-      bindings = <&kp TILDE>;
-    };
-
-    lpar {
-      key-positions = <41 42>;
-      bindings = <&kp LPAR>;
-    };
-
-    lbkt {
-      key-positions = <42 43>;
-      bindings = <&kp LBKT>;
-    };
-
-    lbrc {
-      key-positions = <43 44>;
-      bindings = <&kp LBRC>;
-    };
-
-    sqt {
-      key-positions = <42 44>;
-      bindings = <&kp SQT>;
-    };
-
-    dqt {
-      key-positions = <41 43>;
-      bindings = <&kp DQT>;
-    };
-
-    pipe {
-      key-positions = <41 44>;
-      bindings = <&kp PIPE>;
-    };
-
-    rpar {
-      key-positions = <23 24>;
-      bindings = <&kp RPAR>;
-    };
-
-    rbkt {
-      key-positions = <24 25>;
-      bindings = <&kp RBKT>;
-    };
-
-    rbrc {
-      key-positions = <25 26>;
-      bindings = <&kp RBRC>;
-    };
-
-    backslash {
-      key-positions = <23 26>;
-      bindings = <&kp BSLH>;
-    };
-
-    equal {
-      key-positions = <55 56>;
-      bindings = <&kp EQUAL>;
-    };
-
-    plus {
-      key-positions = <56 57>;
-      bindings = <&kp PLUS>;
-    };
-
-    minus {
-      key-positions = <57 58>;
-      bindings = <&kp MINUS>;
-    };
-
-    star {
-      key-positions = <56 58>;
-      bindings = <&kp STAR>;
-    };
-
-    amp {
-      key-positions = <55 57>;
-      bindings = <&kp AMPS>;
-    };
-
-    at {
-      key-positions = <41 24>;
-      bindings = <&kp AT>;
-    };
-
-    excl {
-      key-positions = <55 58>;
-      bindings = <&kp EXCL>;
-    };
-
-  };
+  /*combos {*/
+  /*  compatible = "zmk,combos";*/
+  /**/
+  /*  copy {*/
+  /*    key-positions = <48 49>;*/
+  /*      bindings*/
+  /*      = <&macro_press &kp LCMD>*/
+  /*      , <&macro_tap &kp C>*/
+  /*      , <&macro_release &kp LCMD>*/
+  /*    ;*/
+  /*  };*/
+  /**/
+  /*  paste {*/
+  /*    key-positions = <49 50>;*/
+  /*      bindings*/
+  /*      = <&macro_press &kp LCMD>*/
+  /*      , <&macro_tap &kp V>*/
+  /*      , <&macro_release &kp LCMD>*/
+  /*    ;*/
+  /*  };*/
+  /**/
+  /*  tab {*/
+  /*    key-positions = <30 31>;*/
+  /*    bindings = <&kp TAB>;*/
+  /*  };*/
+  /**/
+  /*  esc {*/
+  /*    key-positions = <29 30>;*/
+  /*    bindings = <&kp ESC>;*/
+  /*  };*/
+  /**/
+  /*  ret {*/
+  /*    key-positions = <29 32>;*/
+  /*    bindings = <&kp RET>;*/
+  /*  };*/
+  /**/
+  /*  bspc {*/
+  /*    key-positions = <47 48>;*/
+  /*    bindings = <&kp BSPC>;*/
+  /*  };*/
+  /**/
+  /*  under {*/
+  /*    key-positions = <30 32>;*/
+  /*    bindings = <&kp UNDER>;*/
+  /*  };*/
+  /**/
+  /*  grave {*/
+  /*    key-positions = <17 18>;*/
+  /*    bindings = <&kp GRAVE>;*/
+  /*  };*/
+  /**/
+  /*  tilde {*/
+  /*    key-positions = <16 17>;*/
+  /*    bindings = <&kp TILDE>;*/
+  /*  };*/
+  /**/
+  /*  lpar {*/
+  /*    key-positions = <41 42>;*/
+  /*    bindings = <&kp LPAR>;*/
+  /*  };*/
+  /**/
+  /*  lbkt {*/
+  /*    key-positions = <42 43>;*/
+  /*    bindings = <&kp LBKT>;*/
+  /*  };*/
+  /**/
+  /*  lbrc {*/
+  /*    key-positions = <43 44>;*/
+  /*    bindings = <&kp LBRC>;*/
+  /*  };*/
+  /**/
+  /*  sqt {*/
+  /*    key-positions = <42 44>;*/
+  /*    bindings = <&kp SQT>;*/
+  /*  };*/
+  /**/
+  /*  dqt {*/
+  /*    key-positions = <41 43>;*/
+  /*    bindings = <&kp DQT>;*/
+  /*  };*/
+  /**/
+  /*  pipe {*/
+  /*    key-positions = <41 44>;*/
+  /*    bindings = <&kp PIPE>;*/
+  /*  };*/
+  /**/
+  /*  rpar {*/
+  /*    key-positions = <23 24>;*/
+  /*    bindings = <&kp RPAR>;*/
+  /*  };*/
+  /**/
+  /*  rbkt {*/
+  /*    key-positions = <24 25>;*/
+  /*    bindings = <&kp RBKT>;*/
+  /*  };*/
+  /**/
+  /*  rbrc {*/
+  /*    key-positions = <25 26>;*/
+  /*    bindings = <&kp RBRC>;*/
+  /*  };*/
+  /**/
+  /*  backslash {*/
+  /*    key-positions = <23 26>;*/
+  /*    bindings = <&kp BSLH>;*/
+  /*  };*/
+  /**/
+  /*  equal {*/
+  /*    key-positions = <55 56>;*/
+  /*    bindings = <&kp EQUAL>;*/
+  /*  };*/
+  /**/
+  /*  plus {*/
+  /*    key-positions = <56 57>;*/
+  /*    bindings = <&kp PLUS>;*/
+  /*  };*/
+  /**/
+  /*  minus {*/
+  /*    key-positions = <57 58>;*/
+  /*    bindings = <&kp MINUS>;*/
+  /*  };*/
+  /**/
+  /*  star {*/
+  /*    key-positions = <56 58>;*/
+  /*    bindings = <&kp STAR>;*/
+  /*  };*/
+  /**/
+  /*  amp {*/
+  /*    key-positions = <55 57>;*/
+  /*    bindings = <&kp AMPS>;*/
+  /*  };*/
+  /**/
+  /*  at {*/
+  /*    key-positions = <41 24>;*/
+  /*    bindings = <&kp AT>;*/
+  /*  };*/
+  /**/
+  /*  excl {*/
+  /*    key-positions = <55 58>;*/
+  /*    bindings = <&kp EXCL>;*/
+  /*  };*/
+  /**/
+  /*};*/
 
   behaviors {
     #include "macros.dtsi"
@@ -212,43 +207,43 @@
         hold-trigger-key-positions = <KEYS_R THUMBS_RIGHT>;
     };
 
-    ms0: magic_shift_0 {
-        compatible = "zmk,behavior-tap-dance";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        bindings = <&kp LSHIFT>, <&caps_word>;
-    };
+    /*ms0: magic_shift_0 {*/
+    /*    compatible = "zmk,behavior-tap-dance";*/
+    /*    #binding-cells = <0>;*/
+    /*    tapping-term-ms = <200>;*/
+    /*    bindings = <&kp LSHIFT>, <&caps_word>;*/
+    /*};*/
 
-    macros {
-        cmd_space: cmd_space {
-            label = "ZM_cmd_space";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCMD>
-                , <&macro_tap &kp SPACE>
-                , <&macro_release &kp LCMD>
-                ;
-        };
-        os_prev: os_prev {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp LBKT>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
-        os_next: os_next {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp RBKT>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
-    };
+    /*macros {*/
+    /*    cmd_space: cmd_space {*/
+    /*        label = "ZM_cmd_space";*/
+    /*        compatible = "zmk,behavior-macro";*/
+    /*        #binding-cells = <0>;*/
+    /*        bindings*/
+    /*            = <&macro_press &kp LCMD>*/
+    /*            , <&macro_tap &kp SPACE>*/
+    /*            , <&macro_release &kp LCMD>*/
+    /*            ;*/
+    /*    };*/
+    /*    os_prev: os_prev {*/
+    /*        compatible = "zmk,behavior-macro";*/
+    /*        #binding-cells = <0>;*/
+    /*        bindings*/
+    /*            = <&macro_press &kp LCTRL>*/
+    /*            , <&macro_tap &kp LBKT>*/
+    /*            , <&macro_release &kp LCTRL>*/
+    /*            ;*/
+    /*    };*/
+    /*    os_next: os_next {*/
+    /*        compatible = "zmk,behavior-macro";*/
+    /*        #binding-cells = <0>;*/
+    /*        bindings*/
+    /*            = <&macro_press &kp LCTRL>*/
+    /*            , <&macro_tap &kp RBKT>*/
+    /*            , <&macro_release &kp LCTRL>*/
+    /*            ;*/
+    /*    };*/
+    /*};*/
   };
 
   keymap {
@@ -261,7 +256,7 @@
         &kp TAB   &kp Q       &kp W       &kp E         &kp R         &kp T  &none                                                                            &none   &kp Y  &kp U         &kp I         &kp O        &kp P           &kp BSLH
         &gresc    &hml LALT A &hml LCMD S &hml LCTRL D  &hml LSHIFT F &kp G  &cmd_space             &kp LCMD    &kp LALT   &kp RALT   &kp RCMD                &none   &kp H  &hmr LSHIFT J &hmr LCTRL K  &hmr LCMD L  &hmr LALT SEMI  &kp SQT
         &ms0      &kp Z       &kp X       &kp C         &kp V         &kp B                                      &kp HOME   &kp PG_UP                                 &kp N  &kp M         &kp COMMA     &kp DOT      &kp FSLH        &ms0
-        &mo FN    &kp GRAVE   &kp CAPS    &kp LEFT       &kp RIGHT                     &lt NAV SPACE  &lt SM RET  &kp END    &kp PG_DN   &mo NUM     &ms0                    &kp UP        &kp DOWN      &kp LBKT     &kp RBKT        &mo FN
+        &mo FN    &kp GRAVE   &kp CAPS    &kp LEFT       &kp RIGHT                     &kp BSPC  &kp TAB  &kp END    &kp PG_DN   &kp RET     &kp SPACE           &kp DOWN      &kp UP        &kp LBKT     &kp RBKT        &mo FN
       >;
     };
 
@@ -305,7 +300,7 @@
         &trans  &trans  &kp N7 &kp N8 &kp N9 &trans  &none                                                                       &none &trans &trans &trans &trans  &trans  &trans
         &trans  &kp N0  &kp N4 &kp N5 &kp N6 &trans  &none         &trans &trans &trans &trans                                   &none &trans &trans &trans &trans  &trans  &trans
         &trans  &trans  &kp N1 &kp N2 &kp N3 &trans                       &trans &trans                                                &trans &trans &trans &trans  &trans  &trans
-        &trans  &trans  &trans &trans &trans                &lt NAV SPACE  &lt SM RET  &kp END    &kp PG_DN   &mo NUM     &ms0                &trans &trans &trans  &trans  &trans
+        &trans  &trans  &trans &trans &trans                           &trans &trans &trans     &trans   &trans   &trans                &trans &trans &trans  &trans  &trans
       >;
     };
 
@@ -316,7 +311,7 @@
         &trans   &trans   &kp AMPS  &kp STAR  &kp LPAR  &trans  &none                                                                   &none  &trans    &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC   &trans
         &trans   &kp RPAR &kp DLLR  &kp PRCNT &kp CARET &trans  &none                       &trans &trans   &trans     &trans           &none  &kp TILDE &kp UNDER  &kp EQUAL  &kp PLUS  &kp MINUS  &trans
         &trans   &trans   &kp EXCL  &kp AT    &kp HASH  &trans                                     &trans   &trans                             &trans    &kp DQT    &kp SQT    &kp GRAVE &kp PIPE   &trans
-        &trans   &trans   &trans    &trans    &trans                &lt NAV SPACE  &lt SM RET  &kp END   &kp PG_DN  &mo NUM   &ms0                    &trans     &trans     &trans    &trans     &trans
+        &trans   &trans   &trans    &trans    &trans                              &trans &trans &trans     &trans   &trans   &trans                    &trans     &trans     &trans    &trans     &trans
       >;
     };
 
