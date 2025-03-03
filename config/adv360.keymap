@@ -76,7 +76,7 @@
     };
 
     under {
-      key-positions = <30 32>;
+      key-positions = <32 33>;
       bindings = <&kp UNDER>;
     };
 
