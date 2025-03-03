@@ -10,7 +10,7 @@
 #define SYS 2
 #define NAV 3
 #define NUM 4
-#define SM 5
+#define SYM 5
 
 #define KEYS_L   0  1  2  3  4  5  6 \
                 14 15 16 17 18 19 20 \
@@ -34,148 +34,148 @@
 
 / {
 
-  /*combos {*/
-  /*  compatible = "zmk,combos";*/
-  /**/
-  /*  copy {*/
-  /*    key-positions = <48 49>;*/
-  /*      bindings*/
-  /*      = <&macro_press &kp LCMD>*/
-  /*      , <&macro_tap &kp C>*/
-  /*      , <&macro_release &kp LCMD>*/
-  /*    ;*/
-  /*  };*/
-  /**/
-  /*  paste {*/
-  /*    key-positions = <49 50>;*/
-  /*      bindings*/
-  /*      = <&macro_press &kp LCMD>*/
-  /*      , <&macro_tap &kp V>*/
-  /*      , <&macro_release &kp LCMD>*/
-  /*    ;*/
-  /*  };*/
-  /**/
-  /*  tab {*/
-  /*    key-positions = <30 31>;*/
-  /*    bindings = <&kp TAB>;*/
-  /*  };*/
-  /**/
-  /*  esc {*/
-  /*    key-positions = <29 30>;*/
-  /*    bindings = <&kp ESC>;*/
-  /*  };*/
-  /**/
-  /*  ret {*/
-  /*    key-positions = <29 32>;*/
-  /*    bindings = <&kp RET>;*/
-  /*  };*/
-  /**/
-  /*  bspc {*/
-  /*    key-positions = <47 48>;*/
-  /*    bindings = <&kp BSPC>;*/
-  /*  };*/
-  /**/
-  /*  under {*/
-  /*    key-positions = <30 32>;*/
-  /*    bindings = <&kp UNDER>;*/
-  /*  };*/
-  /**/
-  /*  grave {*/
-  /*    key-positions = <17 18>;*/
-  /*    bindings = <&kp GRAVE>;*/
-  /*  };*/
-  /**/
-  /*  tilde {*/
-  /*    key-positions = <16 17>;*/
-  /*    bindings = <&kp TILDE>;*/
-  /*  };*/
-  /**/
-  /*  lpar {*/
-  /*    key-positions = <41 42>;*/
-  /*    bindings = <&kp LPAR>;*/
-  /*  };*/
-  /**/
-  /*  lbkt {*/
-  /*    key-positions = <42 43>;*/
-  /*    bindings = <&kp LBKT>;*/
-  /*  };*/
-  /**/
-  /*  lbrc {*/
-  /*    key-positions = <43 44>;*/
-  /*    bindings = <&kp LBRC>;*/
-  /*  };*/
-  /**/
-  /*  sqt {*/
-  /*    key-positions = <42 44>;*/
-  /*    bindings = <&kp SQT>;*/
-  /*  };*/
-  /**/
-  /*  dqt {*/
-  /*    key-positions = <41 43>;*/
-  /*    bindings = <&kp DQT>;*/
-  /*  };*/
-  /**/
-  /*  pipe {*/
-  /*    key-positions = <41 44>;*/
-  /*    bindings = <&kp PIPE>;*/
-  /*  };*/
-  /**/
-  /*  rpar {*/
-  /*    key-positions = <23 24>;*/
-  /*    bindings = <&kp RPAR>;*/
-  /*  };*/
-  /**/
-  /*  rbkt {*/
-  /*    key-positions = <24 25>;*/
-  /*    bindings = <&kp RBKT>;*/
-  /*  };*/
-  /**/
-  /*  rbrc {*/
-  /*    key-positions = <25 26>;*/
-  /*    bindings = <&kp RBRC>;*/
-  /*  };*/
-  /**/
-  /*  backslash {*/
-  /*    key-positions = <23 26>;*/
-  /*    bindings = <&kp BSLH>;*/
-  /*  };*/
-  /**/
-  /*  equal {*/
-  /*    key-positions = <55 56>;*/
-  /*    bindings = <&kp EQUAL>;*/
-  /*  };*/
-  /**/
-  /*  plus {*/
-  /*    key-positions = <56 57>;*/
-  /*    bindings = <&kp PLUS>;*/
-  /*  };*/
-  /**/
-  /*  minus {*/
-  /*    key-positions = <57 58>;*/
-  /*    bindings = <&kp MINUS>;*/
-  /*  };*/
-  /**/
-  /*  star {*/
-  /*    key-positions = <56 58>;*/
-  /*    bindings = <&kp STAR>;*/
-  /*  };*/
-  /**/
-  /*  amp {*/
-  /*    key-positions = <55 57>;*/
-  /*    bindings = <&kp AMPS>;*/
-  /*  };*/
-  /**/
-  /*  at {*/
-  /*    key-positions = <41 24>;*/
-  /*    bindings = <&kp AT>;*/
-  /*  };*/
-  /**/
-  /*  excl {*/
-  /*    key-positions = <55 58>;*/
-  /*    bindings = <&kp EXCL>;*/
-  /*  };*/
-  /**/
-  /*};*/
+  combos {
+    compatible = "zmk,combos";
+
+    copy {
+      key-positions = <48 49>;
+        bindings
+        = <&macro_press &kp LCMD>
+        , <&macro_tap &kp C>
+        , <&macro_release &kp LCMD>
+      ;
+    };
+
+    paste {
+      key-positions = <49 50>;
+        bindings
+        = <&macro_press &kp LCMD>
+        , <&macro_tap &kp V>
+        , <&macro_release &kp LCMD>
+      ;
+    };
+
+    tab {
+      key-positions = <30 31>;
+      bindings = <&kp TAB>;
+    };
+
+    esc {
+      key-positions = <29 30>;
+      bindings = <&kp ESC>;
+    };
+
+    ret {
+      key-positions = <29 32>;
+      bindings = <&kp RET>;
+    };
+
+    bspc {
+      key-positions = <47 48>;
+      bindings = <&kp BSPC>;
+    };
+
+    under {
+      key-positions = <30 32>;
+      bindings = <&kp UNDER>;
+    };
+
+    grave {
+      key-positions = <17 18>;
+      bindings = <&kp GRAVE>;
+    };
+
+    tilde {
+      key-positions = <16 17>;
+      bindings = <&kp TILDE>;
+    };
+
+    lpar {
+      key-positions = <41 42>;
+      bindings = <&kp LPAR>;
+    };
+
+    lbkt {
+      key-positions = <42 43>;
+      bindings = <&kp LBKT>;
+    };
+
+    lbrc {
+      key-positions = <43 44>;
+      bindings = <&kp LBRC>;
+    };
+
+    sqt {
+      key-positions = <42 44>;
+      bindings = <&kp SQT>;
+    };
+
+    dqt {
+      key-positions = <41 43>;
+      bindings = <&kp DQT>;
+    };
+
+    pipe {
+      key-positions = <41 44>;
+      bindings = <&kp PIPE>;
+    };
+
+    rpar {
+      key-positions = <23 24>;
+      bindings = <&kp RPAR>;
+    };
+
+    rbkt {
+      key-positions = <24 25>;
+      bindings = <&kp RBKT>;
+    };
+
+    rbrc {
+      key-positions = <25 26>;
+      bindings = <&kp RBRC>;
+    };
+
+    backslash {
+      key-positions = <23 26>;
+      bindings = <&kp BSLH>;
+    };
+
+    equal {
+      key-positions = <55 56>;
+      bindings = <&kp EQUAL>;
+    };
+
+    plus {
+      key-positions = <56 57>;
+      bindings = <&kp PLUS>;
+    };
+
+    minus {
+      key-positions = <57 58>;
+      bindings = <&kp MINUS>;
+    };
+
+    star {
+      key-positions = <56 58>;
+      bindings = <&kp STAR>;
+    };
+
+    amp {
+      key-positions = <55 57>;
+      bindings = <&kp AMPS>;
+    };
+
+    at {
+      key-positions = <41 24>;
+      bindings = <&kp AT>;
+    };
+
+    excl {
+      key-positions = <55 58>;
+      bindings = <&kp EXCL>;
+    };
+
+  };
 
   behaviors {
     #include "macros.dtsi"
@@ -242,11 +242,11 @@
     default_layer {
       display-name = "Base";
       bindings = <
-        &kp EQUAL &kp N1      &kp N2      &kp N3        &kp N4        &kp N5 &tog FN                                                                          &mo SYS &kp N6 &kp N7        &kp N8        &kp N9       &kp N0          &kp MINUS
-        &kp TAB   &kp Q       &kp W       &kp E         &kp R         &kp T  &none                                                                            &none   &kp Y  &kp U         &kp I         &kp O        &kp P           &kp BSLH
-        &gresc    &hml LALT A &hml LCMD S &hml LCTRL D  &hml LSHIFT F &kp G  &none                  &kp LCMD    &kp LALT   &kp RALT   &kp RCMD                &none   &kp H  &hmr LSHIFT J &hmr LCTRL K  &hmr LCMD L  &hmr LALT SEMI  &kp SQT
-        &ms0      &kp Z       &kp X       &kp C         &kp V         &kp B                                      &kp HOME   &kp PG_UP                                 &kp N  &kp M         &kp COMMA     &kp DOT      &kp FSLH        &ms0
-        &mo FN    &kp GRAVE   &kp CAPS    &kp LEFT       &kp RIGHT                     &kp BSPC  &kp TAB  &kp END    &kp PG_DN   &kp RET     &kp SPACE           &kp DOWN      &kp UP        &kp LBKT     &kp RBKT        &mo FN
+        &kp EQUAL &kp N1      &kp N2      &kp N3        &kp N4        &kp N5 &tog FN                                                                                &mo SYS &kp N6 &kp N7        &kp N8        &kp N9       &kp N0          &kp MINUS
+        &kp TAB   &kp Q       &kp W       &kp E         &kp R         &kp T  &none                                                                                  &none   &kp Y  &kp U         &kp I         &kp O        &kp P           &kp BSLH
+        &gresc    &hml LALT A &hml LCMD S &hml LCTRL D  &hml LSHIFT F &kp G  &none                   &kp LCMD    &kp LALT   &kp RALT   &kp RCMD                     &none   &kp H  &hmr LSHIFT J &hmr LCTRL K  &hmr LCMD L  &hmr LALT SEMI  &kp SQT
+        &ms0      &kp Z       &kp X       &kp C         &kp V         &kp B                                      &kp HOME   &kp PG_UP                                       &kp N  &kp M         &kp COMMA     &kp DOT      &kp FSLH        &ms0
+        &mo FN    &kp GRAVE   &kp CAPS    &kp LEFT       &kp RIGHT                     &lt SYM BSPC  &lt NAV TAB  &kp END    &kp PG_DN   &kp RET     &lt NUM SPACE           &kp DOWN      &kp UP        &kp LBKT     &kp RBKT        &mo FN
       >;
     };
 
@@ -288,7 +288,7 @@
       bindings = <
         &trans  &trans  &trans &trans &trans &trans  &none                                                                       &none &trans &trans &trans &trans  &trans  &trans
         &trans  &trans  &kp N7 &kp N8 &kp N9 &trans  &none                                                                       &none &trans &trans &trans &trans  &trans  &trans
-        &trans  &kp N0  &kp N4 &kp N5 &kp N6 &trans  &none         &trans &trans &trans &trans                                   &none &trans &trans &trans &trans  &trans  &trans
+        &trans  &kp N0  &kp N4 &kp N5 &kp N6 &trans  &none         &trans &trans &trans &trans                                   &none &trans &kp LSHIFT &kp LCTRL  &kp LCMD  &kp LALT  &trans
         &trans  &trans  &kp N1 &kp N2 &kp N3 &trans                       &trans &trans                                                &trans &trans &trans &trans  &trans  &trans
         &trans  &trans  &trans &trans &trans                           &trans &trans &trans     &trans   &trans   &trans                &trans &trans &trans  &trans  &trans
       >;
