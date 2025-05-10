@@ -66,13 +66,13 @@
     compatible = "zmk,keymap";
 
     default_layer {
-      display-name = "Base";                                                                                                                                           // WARN: do not remove this MOD
-      bindings = <                                                                                                                                                     //  |||
-        &none     &none       &none       &none         &none         &none     &none                                                                                  &mo MOD &none         &none         &none         &none        &none           &none
-        &none     &kp Q       &kp W       &kp E         &kp R         &kp T     &none                                                                                  &none   &kp Y         &kp U         &kp I         &kp O        &kp P           &none
-        &none     &kp A       &kp S       &kp D         &kp F         &kp G     &none                   &kp LCMD    &kp LALT   &kp RALT   &kp RCMD                     &none   &kp H         &kp J         &kp K         &kp L        &kp SEMI        &none
-        &none     &kp Z       &kp X       &kp C         &kp V         &kp B                                         &kp HOME   &kp PG_UP                                       &kp N         &kp M         &kp COMMA     &kp DOT      &kp FSLH        &ms0
-        &none     &none       &none       &none         &none                            &mo NAV       &LSHIFT      &kp END    &kp PG_DN   &kp SPACE   &mo SYM                 &none         &none         &none         &none        &mo FN
+      display-name = "Base";                                                                                                                     // WARN: do not remove this MOD
+      bindings = <                                                                                                                               //  |||
+        &none   &none   &none   &none     &none     &none     &none                                                                              &mo MOD &none     &none     &none       &none      &none       &none
+        &none   &kp Q   &kp W   &kp E     &kp R     &kp T     &none                                                                              &none   &kp Y     &kp U     &kp I       &kp O      &kp P       &none
+        &none   &kp A   &kp S   &kp D     &kp F     &kp G     &none                   &kp LCMD    &kp LALT   &kp RALT   &kp RCMD                 &none   &kp H     &kp J     &kp K       &kp L      &kp SEMI    &none
+        &none   &kp Z   &kp X   &kp C     &kp V     &kp B                                         &kp HOME   &kp PG_UP                                   &kp N     &kp M     &kp COMMA   &kp DOT    &kp FSLH    &none
+        &none   &none   &none   &none     &none                        &mo NAV       &LSHIFT      &kp END    &kp PG_DN   &kp SPACE   &mo SYM                       &none     &none       &none      &mo FN      &none
       >;
     };
 
@@ -90,11 +90,11 @@
     num {
       display-name = "Num";
       bindings = <
-        &trans   &trans   &trans    &trans    &trans    &trans  &none                                                                   &none  &trans    &trans     &trans     &trans    &trans     &trans
-        &trans   &trans   &kp AMPS  &kp STAR  &kp LPAR  &trans  &none                                                                   &none  &trans    &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC   &trans
-        &trans   &kp N1   &kp N2    &kp N3    &kp N4    &kp N5  &none                       &trans &trans   &trans   &trans             &none  &kp N6    &kp N7     &kp N8     &kp N9    &kp N0     &trans
-        &trans   &trans   &kp EXCL  &kp AT    &kp HASH  &trans                                     &trans   &trans                             &trans    &kp DQT    &kp SQT    &kp GRAVE &kp PIPE   &trans
-        &trans   &trans   &trans    &trans    &trans                                 &trans &trans &trans   &trans   &trans   &trans                     &trans     &trans     &trans    &trans     &trans
+        &trans   &trans    &trans    &trans    &trans    &trans    &none                                                                   &none  &trans     &trans     &trans     &trans    &trans     &trans
+        &trans   &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT &none                                                                   &none  &kp CARET  &kp AMPS   &kp STAR   &kp LPAR  &kp RPAR   &trans
+        &trans   &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &none                       &trans &trans   &trans   &trans             &none  &kp N6     &kp N7     &kp N8     &kp N9    &kp N0     &trans
+        &trans   &trans    &kp ???L  &kp ???   &kp ???H  &trans                                       &trans   &trans                             &trans     &kp ???    &kp ???    &kp LBKT  &kp RBKT   &trans
+        &trans   &trans    &trans    &trans    &trans                                   &trans &trans &trans   &trans   &trans   &trans                      &trans     &trans     &trans    &trans     &trans
       >;
     };
 
