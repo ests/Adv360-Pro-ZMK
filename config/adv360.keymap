@@ -36,11 +36,60 @@
   combos {
     compatible = "zmk,combos";
 
-    // copy {
-    //   key-positions = <48 49>;
-    //   bindings = <&macro_copy>;
-    // };
+    copy {
+      key-positions = <41 42 43>;
+      bindings = <&kp LCMD>;
+    };
 
+    copy {
+      key-positions = <16 17 32>;
+      bindings = <&kp LALT>;
+    };
+
+    copy {
+      key-positions = <16 17 32>;
+      bindings = <&kp LALT>;
+    };
+
+    copy {
+      key-positions = <43 44>;
+      bindings = <&kp SQT>;
+    };
+
+    copy {
+      key-positions = <41 24 25>;
+      bindings = <&kp LALT>;
+    };
+
+    copy {
+      key-positions = <66 69>;
+      bindings = <&kp LCTRL>;
+    };
+
+    copy {
+      key-positions = <66 69>;
+      bindings = <&kp LCTRL>;
+    };
+
+    copy {
+      key-positions = <48 49 50>;
+      bindings = <&kp LCTRL>;
+    };
+  
+    copy {
+      key-positions = <49 50 55 56>;
+      bindings = <&kp ESC>;
+    };
+  
+    copy {
+      key-positions = <33 40>;
+      bindings = <&sk LCTRL &sk LSHIFT &sk LALT &sk LGUI>;
+    };
+ 
+    copy {
+      key-positions = <30 31 32>;
+      bindings = <&kp LCTRL>;
+    };
   };
 
   behaviors {
