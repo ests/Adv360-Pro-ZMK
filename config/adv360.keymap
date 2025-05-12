@@ -36,57 +36,57 @@
   combos {
     compatible = "zmk,combos";
 
-    copy {
+    combo_alpha {
       key-positions = <41 42 43>;
       bindings = <&kp LCMD>;
     };
 
-    copy {
+    combo_bravo {
       key-positions = <16 17 32>;
       bindings = <&kp LALT>;
     };
 
-    copy {
+    combo_charlie {
       key-positions = <16 17 32>;
       bindings = <&kp LALT>;
     };
 
-    copy {
+    combo_delta {
       key-positions = <43 44>;
       bindings = <&kp SQT>;
     };
 
-    copy {
+    combo_echo {
       key-positions = <41 24 25>;
       bindings = <&kp LALT>;
     };
 
-    copy {
+    combo_foxtrot {
       key-positions = <66 69>;
       bindings = <&kp LCTRL>;
     };
 
-    copy {
+    combo_golf {
       key-positions = <66 69>;
       bindings = <&kp LCTRL>;
     };
 
-    copy {
+    combo_hotel {
       key-positions = <48 49 50>;
       bindings = <&kp LCTRL>;
     };
   
-    copy {
+    combo_india {
       key-positions = <49 50 55 56>;
       bindings = <&kp ESC>;
     };
   
-    copy {
+    combo_juliet {
       key-positions = <33 40>;
       bindings = <&sk LCTRL &sk LSHIFT &sk LALT &sk LGUI>;
     };
  
-    copy {
+    combo_kilo {
       key-positions = <30 31 32>;
       bindings = <&kp LCTRL>;
     };
