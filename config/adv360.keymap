@@ -37,6 +37,31 @@
   combos {
     compatible = "zmk,combos";
 
+    combo_under {
+      key-positions = <29 33>;
+      bindings = <&kp UNDER>;
+    };
+
+    combo_minus {
+      key-positions = <40 44>;
+      bindings = <&kp MINUS>;
+    };
+
+    combo_pipe {
+      key-positions = <47 51>;
+      bindings = <&kp PIPE>;
+    };
+
+    combo_lbrc {
+      key-positions = <15 19>;
+      bindings = <&kp LBRC>;
+    };
+
+    combo_rbrc {
+      key-positions = <22 26>;
+      bindings = <&kp RBRC>;
+    };
+
     combo_alpha {
       key-positions = <41 42 43>;
       bindings = <&kp LCMD>;
